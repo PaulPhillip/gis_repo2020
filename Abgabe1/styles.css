@@ -1,0 +1,118 @@
+/* reset und Body */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+video{
+    width:100%;
+}
+audio{
+    width:100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url('bg.png');    
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 1200px;
+}
+/*reset ende*/
+/*Start Navigation*/
+nav{  
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+   
+}
+
+nav li {
+    
+    font-size: 25px;
+    padding: 0 2vh;
+}
+nav li a {
+    color: white;
+}
+
+.menu li{
+    display: inline-block;
+}
+/*Ende Navigation*/
+/* Start Header*/
+header{
+    position: relative;    
+   
+}
+.headerBackground{
+    background-image: url('LogoUnbeschriftet.svg');
+    width:100%;
+    padding-top:100%;
+    background-position: center;    
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.headerSchriftzug{       
+    width: 100%;
+    height: auto;
+    position: absolute;    
+    top:5%;
+}
+.headerSchriftzug h1{
+    color: white;
+    font-size: 12em;
+    text-align: center; 
+}
+#socialMedia{
+    margin-top: 8%;
+    display:flex;
+    justify-content: space-around;
+}
+.fab, .fas{
+    color: white;
+    text-align: center;    
+    font-size: 4em;
+    top:10%;
+}
+/*Ende Navigation*/
+/* Beginn Content*/
+img{
+    width:100%;
+    height: auto;
+}
+section{
+    
+    padding: 5%;
+}
+.flexDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;;
+}
+
+#ersterLinkerContent{
+
+flex: 2;
+    
+}
+#ersterRechterContent{
+  
+flex: 4;
+}
+
+main section:nth-child(odd){
+    background-color: rgba(65, 255, 65, 0.4);
+    flex-direction: row-reverse;
+}
