@@ -1,42 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/85bb9ff211.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Formular</title>
   </head>
   <body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="ueberMich.html">Über mich</a></li>
+      <li><a href="kontakt.html">Formular</a></li>
+    </ul>
+  </nav> 
   <header>
-    <div class="navigation">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="ueberMich.html">Über Mich</a>
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
-    </div>
+    <div class="headerBackground">
+      <div class="headerSchriftzug">
+        <h1>Formular</h1>
+        <div id="socialMedia">
+          <a href="https://www.facebook.com/paul.phillip.94?ref=bookmarks"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/PaulPhillip/gis_repo2020"><i class="fab fa-github"></i></a>
+          <a href="mailto:paul.phillip@hs-furtwangen.de"><i class="fas fa-envelope-square"></i></a>          
+        </div>
+      </div>
+    </div>    
   </header>
   <main>
-    <div class="main">
-      <h1>Kontakt</h1>
-      <section>
-        <h2>Mail</h2>
-        <p>EMail: <a href="mailto:paul.phillip@hs-furtwangen.de">paul.phillip@hs-furtwangen.de</a></p>
-      </section>
-      <section>
-        <h2>Facebook</h2>
-        <p><a href="https://www.facebook.com/paul.phillip.94?ref=bookmarks">Facebook</a></p>
-      </section>      
-    </div>
+    <section>
+      <div class="flexDiv">
+        <div id="ersterLinkerContent">
+          <h2 id="h2Formular">Formular</h2>
+                <form id="message-form">
+                    <input  placeholder="Nachname">
+                    <input  placeholder="Alter">
+                    <input  placeholder="Beziehungsstatus">
+                    <input  placeholder="Handynummer">
+                    <p>Ich freue mich über Zahlreiche Nachrichten</p>
+                    <button type="submit">Produziere!</button>
+                </form>
+        </div>
+        
+      </div>    
+    </section>      
   </main>
   <footer>
-    <div class="footer">
+    <div class="footer">          
+        <cite>Dont worry, be happy.</cite>      
       <p>
-        Impressum bla bla bla
-        <cite>Dont worry, be happy.</cite>
+        Made by Paul Phillip 30.10.2020
       </p>
     </div>
-  </footer>  
-    
-    
+  </footer>   
   </body>
 </html>

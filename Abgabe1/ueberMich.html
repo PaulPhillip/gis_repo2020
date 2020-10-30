@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/85bb9ff211.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <title>Über Mich</title>
   </head>
   <body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="ueberMich.html">Über mich</a></li>
+      <li><a href="kontakt.html">Formular</a></li>
+    </ul>
+  </nav> 
   <header>
-    <div class="navigation">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="ueberMich.html">Über Mich</a>
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
-    </div>
+    <div class="headerBackground">
+      <div class="headerSchriftzug">
+        <h1>Über Mich</h1>
+        <div id="socialMedia">
+          <a href="https://www.facebook.com/paul.phillip.94?ref=bookmarks"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/PaulPhillip/gis_repo2020"><i class="fab fa-github"></i></a>
+          <a href="mailto:paul.phillip@hs-furtwangen.de"><i class="fas fa-envelope-square"></i></a>          
+        </div>
+      </div>
+    </div>    
   </header>
   <main>
-    <div class="main">
-      <h1>Über Mich</h1>
-      <h2>Paul Phillip</h2>
-      <img src="Steckbrief-Portrait.jpg" alt="Portrait">
-      <p>
-        Mein Name ist Paul Phillip, ich bin 23 Jahre alt und bin ein ausgelernter Mediengestalter.<br>
-        In meiner Freizeit verbringe ich gerne Zeit mit meinen Freunden, gehe gerne in Urlaub und höre sehr gerne Musik.
-      </p>
-      <p>
-        Ich studiere Online Medien Bachelor an der Hochschule Furtwangen. Momentan befinde ich mich im 2. Fachsemester und mache diese Internetseite für meinen Kurs GiS.
-      </p>
-    </div>
+    <section>
+      <div class="flexDiv">
+        <div id="ersterLinkerContent">
+          <h3>Paul Phillip</h3>        
+          <p>
+            Mein Name ist Paul Phillip, ich bin 23 Jahre alt und bin ein ausgelernter Mediengestalter.<br>
+            In meiner Freizeit verbringe ich gerne Zeit mit meinen Freunden, gehe gerne in Urlaub und höre sehr gerne Musik.
+          </p>
+        </div>
+        <div id="ersterRechterContent">
+          <img id="portrait" src="Steckbrief-Portrait.jpg" alt="Portrait">  
+        </div>
+      </div>    
+    </section>      
   </main>
   <footer>
-    <div class="footer">
+    <div class="footer">          
+        <cite>Dont worry, be happy.</cite>      
       <p>
-        Impressum bla bla bla
-        <cite>Dont worry, be happy.</cite>
+        Made by Paul Phillip 30.10.2020
       </p>
     </div>
-  </footer>  
-    
-    
+  </footer>   
   </body>
 </html>

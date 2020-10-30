@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-weight:600;
     font-family: 'Poppins', sans-serif;
 }
 video{
@@ -33,26 +34,38 @@ nav{
     position: sticky;
     top:0;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.8);
-   
+    background-color: rgba(0, 0, 0, 0.8);   
 }
 
-nav li {
-    
+nav li { 
     font-size: 25px;
     padding: 0 2vh;
+}
+nav li:hover{
+    background-color:rgba(152,251,152, 0.8);
+}
+nav li:active{
+    background-color:white;
 }
 nav li a {
     color: white;
 }
+nav li:hover {
+    color: white;
+}
+
 
 .menu li{
     display: inline-block;
+}
+a[class="active"]{
+    color:rgb(152,251,152)
 }
 /*Ende Navigation*/
 /* Start Header*/
 header{
     position: relative;    
+    height: 60vw;
    
 }
 .headerBackground{
@@ -68,17 +81,15 @@ header{
     width: 100%;
     height: auto;
     position: absolute;    
-    top:5%;
+    top:0%;
 }
 .headerSchriftzug h1{
     color: white;
     font-size: 12em;
     text-align: center; 
 }
-#socialMedia{
-    margin-top: 8%;
-    display:flex;
-    justify-content: space-around;
+.headerSchriftzug h1:hover{
+    color:rgba(152,251,152, 0.8);
 }
 .fab, .fas{
     color: white;
@@ -86,7 +97,18 @@ header{
     font-size: 4em;
     top:10%;
 }
-/*Ende Navigation*/
+#socialMedia{
+    margin-top: 3%;
+    display:flex;
+    justify-content: space-around;
+}
+#socialMedia i:hover{
+    color:rgba(152,251,152, 0.8);
+}
+
+
+
+/*Ende Header*/
 /* Beginn Content*/
 img{
     width:100%;
@@ -94,25 +116,165 @@ img{
 }
 section{
     
-    padding: 5%;
 }
 .flexDiv{
     display: flex;
     justify-content: space-around;
     align-items: center;;
 }
-
 #ersterLinkerContent{
-
-flex: 2;
-    
+flex: 2;   
+padding: 3em; 
 }
-#ersterRechterContent{
-  
-flex: 4;
+#ersterRechterContent{  
+flex: 3;
 }
-
+.rechterContent{
+    flex: 4;
+}
+.linkerContent{
+    flex: 2 ;
+}
+main h2{
+    font-size: 5em;
+    padding:0.5em;
+    color:white;
+}
+main h3{
+    font-size: 3.5em;
+    padding:0.2em;
+    color:white;
+}
+main p{
+    font-size: 2em;
+    color:white;
+    padding:0.2em;
+}
+main li{
+    font-size: 2em;
+    color:white;
+    padding:0.2em;
+}
 main section:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.4);
-    
+    background-color: rgba(0, 0, 0, 0.4);    
+    padding: 2em;    
+    margin: 2em 0;
 }
+main section:nth-child(even){
+    padding: 4em 0;    
+}
+main section:nth-child(even) h3,main section:nth-child(even) p,main section:nth-child(even) li,main section:nth-child(even) h2 {
+    color:black;
+}
+main section:nth-child(even)>div{
+    flex-direction: row-reverse;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 3.5em 0;
+}
+main section:nth-child(even)>div>div{
+    padding-right: 2em;
+}
+section li {
+    border: solid white 1px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+section li:hover{
+    transition: background-color 1s ease-in-out 0.3s;
+    background-color:rgba(152,251,152, 0.8);
+}
+
+section li a {
+    text-align: center;
+    color: white;
+}
+/*Ende Content*/
+/*Anfange Footer*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+/*Ende Footer*/ 
+/*Anfang Media Queries*/
+@media screen and (max-width: 1024px) {
+    .headerSchriftzug h1{
+        font-size: 9em;
+    }
+    .fab, .fas{        
+        font-size: 3em;       
+    }
+    main h2{
+        font-size:3em;
+    }
+    main h3{
+        font-size:2em;
+    }
+    main p{
+        font-size:1em;
+    }
+    main li{
+        font-size: 1em;        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerSchriftzug h1{
+        font-size: 7em;
+    }
+    .fab, .fas{
+        font-size: 2em;      
+    }
+    main h2{
+        font-size:2em;
+    }
+    main h3{
+        font-size:1.5em;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        justify-content: center;
+    }
+    .menu{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerSchriftzug h1{
+        font-size: 3.5em;
+    }
+    .fab, .fas{
+        font-size: 1.5em;      
+    }
+    .flexDiv{
+        flex-direction: column;
+    }
+    main section:nth-child(even)>div{
+        flex-direction: column;
+        padding:2em;
+    }
+    #ersterLinkerContent{
+        padding:0;
+    }
+    main section:nth-child(even)>div>div{
+        padding-bottom: 2em;
+    }
+    .linkerContent{
+        padding-bottom:2em;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    audio{
+        width:80vw;
+    }
+}
+/*Ende Media Queries*/
+/*Start Anpassung Unterseiten*/
+#h2Formular{
+    padding:0;
+}
+  
