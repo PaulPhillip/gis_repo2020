@@ -1,0 +1,12 @@
+.row img {
+    width: 200px;
+    height: 200px;
+}
+
+.selected {
+    border: black 2px solid;
+}
+
+.hide{
+    display:none;
+}
