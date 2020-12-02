@@ -40,6 +40,7 @@ async function main() {
 
 	let browserCacheData = {top: localStorageTop, middle: localStorageMiddle, bottom: localStorageBottom};
 	let baseUrl = 'https://gis-communication.herokuapp.com';
+	console.log(baseUrl);
 	//Query String erzeugen
 	let query: URLSearchParams = new URLSearchParams(<any>browserCacheData);
 	baseUrl = baseUrl + "?" + query.toString();
