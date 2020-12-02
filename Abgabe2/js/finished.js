@@ -31,7 +31,8 @@ async function main() {
     imgBottom.setAttribute('src', `img/${localStorageBottom}`);
     bottomElementRow.appendChild(imgBottom);
     let browserCacheData = { top: localStorageTop, middle: localStorageMiddle, bottom: localStorageBottom };
-    let baseUrl = 'http://gis-communication.herokuapp.com';
+    let baseUrl = 'https://gis-communication.herokuapp.com';
+    console.log(baseUrl);
     //Query String erzeugen
     let query = new URLSearchParams(browserCacheData);
     baseUrl = baseUrl + "?" + query.toString();
