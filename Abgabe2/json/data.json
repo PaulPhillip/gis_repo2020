@@ -1,5 +1,5 @@
 {
   "top": ["whopper.png", "baconwhopper.png", "chickenburger.png"],
   "middle": ["sickfries.png" , "sickNuggets.png", "sickWings.png"],
-  "bottom": ["sickSprite", "sickCola.png", "sickFanta.png"]
+  "bottom": ["sickSprite.png", "sickCola.png", "sickFanta.png"]
 }
