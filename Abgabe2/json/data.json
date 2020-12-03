@@ -1,5 +1,5 @@
 {
   "top": ["1.png", "2.png"],
-  "middle": ["2.png"],
+  "middle": ["2.png" , "3.png"],
   "bottom": ["3.png", "1.png"]
 }
