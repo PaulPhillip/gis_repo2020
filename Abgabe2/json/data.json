@@ -1,5 +1,5 @@
 {
-  "top": ["1.png", "2.png"],
-  "middle": ["2.png" , "3.png"],
-  "bottom": ["3.png", "1.png"]
+  "top": ["whopper.png", "baconwhopper.png", "chickenburger.png"],
+  "middle": ["sickfries.png" , "sickNuggets.png", "sickWings.png"],
+  "bottom": ["sickSprite", "sickCola.png", "sickFanta.png"]
 }
